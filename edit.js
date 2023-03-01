@@ -170,7 +170,7 @@ function displayContacts(contacts) {
 
 function addRow(contact) {
   var tcontent = document.getElementById("tcontent");
-  htmlStr.push(`<tr><td>${contact.id}</td><td>${contact.address}</td><td>${contact.phone.mobile}</td></tr>`);
+  htmlStr.push(`<tr><td data-label="Name">${contact.name}</td><td data-label="Address">${contact.address}</td><td data-label="Mobile">${contact.phone.mobile}</td></tr>`);
   
   // var row = tcontent.insertRow();
 
